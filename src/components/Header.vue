@@ -47,7 +47,6 @@ query Portfolio {
         technology
         integrations
         deployed
-        hosting
       }
     }
   }
