@@ -12,6 +12,8 @@ technology:
   - CSS/Less
 integrations: AWS S3 Storage
 deployed: Gulp, NPM & GIT
+year: 2017
+github: https://github.com/functionfirst/property-portal
 ---
 The brief for this project was to design and develop a fully functional property management website to advertise property for sale or available to rent. Initially the plan was for the portal to be launched in Qatar and from there slowly build interest and expand into other territories as awareness and demand grew.
 
@@ -22,6 +24,8 @@ The brief for this project was to design and develop a fully functional property
 * REST API with Token Based Authentication (JWT)
 * Password Reset - also token based
 * AWS S3 cloud storage - to store a potentially large quantity of property images
+
+[![Screenshot of the Property Portal for IQBAYT](./images/iqbayt.jpg)](./images/iqbayt.jpg)
 
 The project itself was developed as two loosely coupled front and back-end applications. The back-end application was built using NodeJS and ExpressJS as the main framework while MongooseJS was used as an object map to a MongoDB document store. Using these libraries I was able to create a Rest API that could be leveraged by the front-end system.
 

@@ -12,7 +12,8 @@ technology:
   - HTML
   - CSS/Less
 deployed: Gulp, NPM & GIT
-hosting: DigitalOcean 
+year: 2017
+github: https://github.com/functionfirst/realtime-auction
 ---
 The initial scope of the Gulf Plates project was to design and build a web application that could facilitate the sale of car number plates in real-time.
 
@@ -40,3 +41,5 @@ Rather than entering a bid value each time the auction value changed, the user i
 As incremental bidding still required constant attention on your auctions an Autobid system was also introduced to Gulf Plates. This allowed Users to set a maximum Bid value for the current auction. When other users placed a bid, the autobid system would check against any autobids logged in the system. Where these Autobids existed a new bid was automatically submitted on behalf of the user.
 
 In situations where multiple autobids existed the internal system would identify the second highest Autobid and outbid it in favour of the user with the highest Autobid value.
+
+[![Screenshot of Realtime Auctions for Gulfplates](./images/gulfplates_view.png)](./images/gulfplates_view.png)

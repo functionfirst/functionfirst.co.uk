@@ -1,30 +1,46 @@
 <template>
   <Layout>
-    <div class="flex leading-normal">
-      <div class="md:mx-8 leading-normal max-w-md">
-        <h1 class="border-b leading-loose text-3xl font-thin">{{ $page.portfolioPost.title }}</h1>
-        
-        <div class="content" v-html="$page.portfolioPost.content"></div>
-      </div>
-      <div class="w-1/3">
-        <template v-if="$page.portfolioPost.role">
-          <h3 class="text-grey-darkest mb-1 text-sm font-thin">Role</h3>
+    <h1 class="pl-8 border-b leading-loose text-3xl font-thin">
+      {{ $page.portfolioPost.title }}
+      <span class="text-sm">{{ $page.portfolioPost.year }}</span>
+    </h1>
+    
+    <div class="lg:flex flex-row-reverse leading-normal">
+      <div class="flex lg:block lg:w-1/3">
+        <div class="mx-8 flex-1" v-if="$page.portfolioPost.role">
+          <h3 class="text-grey-darkest mb-1 text-sm font-thin mt-4">Role</h3>
           {{ $page.portfolioPost.role }}
-        </template>
+        </div>
 
-        <template v-if="$page.portfolioPost.technology">
+        <div class="mx-8 flex-1" v-if="$page.portfolioPost.technology">
           <h3 class="text-grey-darkest mb-1 text-sm font-thin mt-4">Technology</h3>
 
           <div v-for="(tech, index) in $page.portfolioPost.technology" :key="index">
             {{ tech }}
           </div>
-        </template>
+        </div>
 
-        <template v-if="$page.portfolioPost.integrations">
+        <div class="mx-8 flex-1" v-if="$page.portfolioPost.integrations">
           <h3 class="text-grey-darkest mb-1 text-sm font-thin mt-4">Integrations</h3>
 
           {{ $page.portfolioPost.integrations }}
-        </template>
+        </div>
+
+        <div class="mx-8 flex-1" v-if="$page.portfolioPost.github">
+          <h3 class="text-grey-darkest mb-1 text-sm font-thin mt-4">Github</h3>
+          
+          <a
+            :href="$page.portfolioPost.github"
+            class="lg:flex items-center text-primary-dark no-underline hover:text-primary-light"
+            target="_blank"
+          >
+            <Github width="18" height="18" class="mr-1" />
+            {{ $page.portfolioPost.title }}
+          </a>
+        </div>
+      </div>
+      <div class="md:mx-8 lg:w-2/3 leading-normal">
+        <div class="content" v-html="$page.portfolioPost.content"></div>
       </div>
     </div>
   </Layout>
@@ -35,6 +51,8 @@ query portfolio ($path: String!) {
   portfolioPost (path: $path) {
     title
     content
+    year
+    github
     technology
     role
     integrations
@@ -43,7 +61,12 @@ query portfolio ($path: String!) {
 </page-query>
 
 <script>
+import Github from '~/components/icons/Github'
+
 export default {
+  components: {
+    Github
+  },
   metaInfo () {
     return {
       title: `${this.$page.portfolioPost.title} - functionfirst`

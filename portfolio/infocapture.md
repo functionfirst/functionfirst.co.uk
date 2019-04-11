@@ -7,6 +7,7 @@ technology:
   - HTML5
   - CSS
   - jQuery
+year: 2012
 ---
 This work involved exploring and prototyping a new method of creating custom data forms for Infocapture, one of the most popular modules of the Claromentis intranet platform.
 

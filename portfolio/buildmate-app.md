@@ -13,6 +13,7 @@ technology:
   - HTML5
   - CSS/Less
 integrations: Paypal
+year: 2017
 ---
 A web-based application that enabled building companies and tradesmen to create estimates and tender documents, whilst also automatically calculating the most efficient cost for resources used in their projects.
 
@@ -26,7 +27,10 @@ A web-based application that enabled building companies and tradesmen to create 
 * Support ticketing system
 * Cost-efficiency algorithm
 
+
 The key features of the Buildmate application allowed Users to manage a number of aspects of their projects and customer base. In addition to the typical features expected when creating and managing building projects and customers, the system included an algorithm to calculate the most cost-efficient way to purchase resources.
+
+[![Screenshot of the Buildmate web application](./images/buildmateapp.jpg)](./images/buildmateapp.jpg)
 
 ### Cost-efficiency
 When adding a resource to a project, Buildmate's cost-efficiency algorithm would automatically check if the resource already existed in the project. It would then check the total resource value against the purchase quantities available and automatically use the most cost-effective combinations.

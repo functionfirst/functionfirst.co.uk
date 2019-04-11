@@ -5,8 +5,11 @@ intro: Conceptual interface design for Buildmate dashboard on mobile devices.
 image: ./images/thumbs/buildmate-mobile.jpg
 technology:
   - Photoshop
+year: 2015
 ---
-Created in photoshop and designed for mobile devices, this concept design was put together to illustrate the requirements of a project dashboard for the Buildmate - App.
+Created in photoshop and designed for mobile devices, this concept design was put together to illustrate the requirements of a project dashboard for the Buildmate web application.
+
+[![Mock-up screenshot of the Buildmate Mobile app](./images/build_mate_app.jpg)](./images/build_mate_app.jpg)
 
 As a dashboard the concept design needed to display convenient alerts and a high-level overview indicating the general health of projects across the users account. The main focus was therefore the Overdue Projects section at the top of the app. This area immediately brings into focus any estimates that are overdue or are expected to be returned to a customer imminently.
 

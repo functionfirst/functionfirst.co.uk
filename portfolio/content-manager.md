@@ -12,9 +12,10 @@ technology:
   - CSS/Less
 integrations: AWS S3 Storage
 deployed: Gulp, NPM & GIT
+year: 2017
+github: https://github.com/functionfirst/content-manager
 ---
 A simple content and blogging platform that allows you to quickly create content pages and connect them together in a very simple and fluid manner. Using minimal UI and a context menu for formatting, the main focus of the platform is on creating and connecting content quickly.
-
 
 ## Features
 
@@ -25,6 +26,9 @@ A simple content and blogging platform that allows you to quickly create content
 * Private/Public pages
 * Blogs
 * Comment engine
+
+
+[![Screenshot of a site using Content Manager](./images/contentmanager.jpg)](./images/contentmanager.jpg)
 
 Content Manager was built on top of a MongoDB document data store accessed using an Express/MongooseJS Rest API. The front-end of the site is a single page AngularJS application which allows for quick transitioning between pages.
 

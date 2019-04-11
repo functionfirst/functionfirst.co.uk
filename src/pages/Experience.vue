@@ -22,14 +22,12 @@
 				<h3 class="font-normal mt-4">Technical Skills</h3>
 
 				<p class="text-xs">
-					Skill assessment undertaken with
+					Skill assessments undertaken with
 					<a
 						href="https://app.pluralsight.com/profile/alan-jenkins2"
 						class="text-primary-dark no-underline hover:underline hover:text-primary-light"
 						target="_blank"
-					>
-						Pluralsights Skill IQ
-					</a>
+					>Pluralsights Skill IQ</a>.
 				</p>
 
 				<Skill name="CSS" level="Expert" :value="250" />
