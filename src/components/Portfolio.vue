@@ -2,9 +2,9 @@
   <div class="flex flex-wrap items-stretch -mx-4">
     <div :to="node.slug" class="px-4 py-4 w-1/2 xl:w-1/3" v-for="({ node }) in $static.portfolio.edges" :key="node.id">
       <g-link :to="node.path" class="block shadow-lg no-underline text-white relative overflow-hidden">
-        <g-image :src="node.image" v-if="node.image" class="block w-full" />
+        <g-image :alt="`Abstract screenshot of ${node.title}`" :src="node.image" v-if="node.image" class="block w-full" />
 
-        <div class="absolute pin p-6 text-grey-darkest flex flex-col justify-between bg-black">
+        <div class="absolute pin p-6 text-grey-lightest flex flex-col justify-between bg-black">
           <h2 class="text-xl font-thin uppercase">
             {{ node.title }}
           </h2>

@@ -1,12 +1,12 @@
 <template>
   <header class="w-64 mr-2 items-stretch sticky pin-t pin-x">
-    <g-link to="/" class="block no-underline whitespace-no-wrap">
-      <h1 class="text-grey-darkest font-thin text-3xl">Alan Jenkins</h1>
-      <h2 class="text-grey-darkest text-sm font-thin text-sm">Front-end Developer</h2>
+    <g-link to="/" class="block no-underline whitespace-no-wrap text-grey-darkest hover:text-grey-darker">
+      <h1 class="font-thin text-3xl">Alan Jenkins</h1>
+      <h2 class="text-sm font-thin text-sm">Front-end Developer</h2>
     </g-link>
 
     <nav class="mt-12">
-      <h3 class="mb-2 text-xs text-grey-darkest uppercase mt-4">Portfolio</h3>
+      <h3 class="mt-4 mb-2 mx-3 text-xs text-grey-darkest uppercase">Portfolio</h3>
       <g-link
         :to="node.path" v-for="({ node }) in $static.portfolio.edges"
         :key="node.id"
@@ -19,7 +19,7 @@
     </nav>
 
     <div class="mt-4">
-      <h3 class="mb-2 text-xs text-grey-darkest uppercase mt-4">About</h3>
+      <h3 class="mt-4 mb-2 mx-3 text-xs text-grey-darkest uppercase">About</h3>
       
       <g-link
         to="/experience"

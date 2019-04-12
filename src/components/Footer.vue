@@ -3,8 +3,14 @@
     <ul class="list-reset flex justify-center">
 
       <li v-for="(icon, index) in social" :key="index" class="mx-1">
-        <a class="mx-2 block p-1 text-primary-dark hover:text-primary-light" :href="icon.link" target="_blank">
+        <a
+          :href="icon.link"
+          class="mx-2 block p-1 text-primary-dark hover:text-primary-light"
+          rel="noreferrer"
+          target="_blank"
+        >
           <component :is="icon.name" height="32" width="32" />
+          <span class="hidden">{{ icon.name }}</span>
         </a>
       </li>
     </ul>
@@ -13,6 +19,7 @@
       <a
         href="https://github.com/functionfirst/functionfirst.co.uk"
         class="flex items-center no-underline text-sm text-primary-dark hover:text-primary-light hover:underline"
+        rel="noreferrer"
         target="_blank"
       >
         View source code on <Github class="mx-1" width="18" height="18" /> Github

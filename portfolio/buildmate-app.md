@@ -1,5 +1,5 @@
 ---
-title: Buildmate App
+title: Buildmate
 role: Full-stack
 intro: Web application enabling builders/tradesmen to manage their projects and tenders.
 image: ./images/thumbs/buildmate.jpg

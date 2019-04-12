@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="pl-8 border-b leading-loose text-3xl font-thin">
+    <h1 class="pl-8 leading-loose text-3xl font-thin text-black">
       {{ $page.portfolioPost.title }}
       <span class="text-sm">{{ $page.portfolioPost.year }}</span>
     </h1>

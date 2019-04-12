@@ -1,5 +1,5 @@
 ---
-title: Buildmate - Mobile
+title: Buildmate / mobile
 role: Designer
 intro: Conceptual interface design for Buildmate dashboard on mobile devices.
 image: ./images/thumbs/buildmate-mobile.jpg
@@ -7,7 +7,8 @@ technology:
   - Photoshop
 year: 2015
 ---
-Created in photoshop and designed for mobile devices, this concept design was put together to illustrate the requirements of a project dashboard for the Buildmate web application.
+Created in photoshop and designed for mobile devices, this concept design was put together to illustrate the requirements of a project dashboard for the
+<a href="/buildmate-app" class="text-primary-dark no-underline hover:underline hover:text-primary-light">Buildmate web application</a>.
 
 [![Mock-up screenshot of the Buildmate Mobile app](./images/build_mate_app.jpg)](./images/build_mate_app.jpg)
 

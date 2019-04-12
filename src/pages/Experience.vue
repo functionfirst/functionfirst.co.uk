@@ -1,12 +1,14 @@
 <template>
   <Layout>
-		<div class="lg:flex flex-row-reverse leading-normal text-black font-thin -mx-4">
-			<div class="lg:w-1/3 max-w-sm mx-auto mb-4">
+		<div class="lg:flex flex-row-reverse leading-normal text-black font-thin">
+			<div class="lg:w-1/3 max-w-sm mx-auto mb-4 lg:mx-4">
 				<h3 class="font-normal">Current Role</h3>
 				Senior Front End Developer @
 				<a
 					href="://visualsoft.co.uk"
 					class="text-primary-dark no-underline hover:text-primary-light"
+					rel="noreferrer"
+					target="_blank"
 				>
 					Visualsoft Ltd
 				</a>
@@ -26,6 +28,7 @@
 					<a
 						href="https://app.pluralsight.com/profile/alan-jenkins2"
 						class="text-primary-dark no-underline hover:underline hover:text-primary-light"
+						rel="noreferrer"
 						target="_blank"
 					>Pluralsights Skill IQ</a>.
 				</p>
@@ -63,7 +66,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="flex-1 md:mx-8">
+			<div class="flex-1 md:mx-4">
 				<p class="text-2xl">
 					A hard-working and motivated designer, developer and manager with over 15 years of experience in all
 					aspects of a project. Comfortable working as an individual, team member or manager. 
@@ -89,13 +92,15 @@
 					<a
 						href="https://docs.google.com/document/d/1xtrGsfAjW8s9hdqVEkJMyMfiJOYWCiiVVHyKB5Oxtes/edit?usp=sharing"
 						class="flex items-center rounded shadow-md py-4 px-6 bg-primary hover:bg-primary-dark no-underline text-grey-lighter"
+						rel="noreferrer"
 						target="_blank"
 					>
 						<GoogleDrive height="32" width="32" class="mr-4" />
-						<span>
+
+						<div>
 							View Curriculum Vitae
-						<div class="text-xs">Google Doc</div>
-						</span>
+							<div class="text-xs">Google Doc</div>
+						</div>
 					</a>
 				</p>
 
