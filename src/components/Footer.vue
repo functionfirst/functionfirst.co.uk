@@ -5,12 +5,12 @@
       <li v-for="(icon, index) in social" :key="index" class="mx-1">
         <a
           :href="icon.link"
+          :aria-label="icon.name"
           class="mx-2 block p-1 text-primary-dark hover:text-primary-light"
           rel="noreferrer"
           target="_blank"
         >
           <component :is="icon.name" height="32" width="32" />
-          <span class="hidden">{{ icon.name }}</span>
         </a>
       </li>
     </ul>
