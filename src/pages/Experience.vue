@@ -5,7 +5,7 @@
 				<h3 class="font-normal">Current Role</h3>
 				Senior Front End Developer @
 				<a
-					href="://visualsoft.co.uk"
+					href="https://www.visualsoft.co.uk"
 					class="text-primary-dark no-underline hover:text-primary-light"
 					rel="noreferrer"
 					target="_blank"
