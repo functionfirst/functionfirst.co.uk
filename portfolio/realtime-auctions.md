@@ -1,6 +1,6 @@
 ---
 title: Real-time Auctions
-role: Front & Back-end Developer
+role: Full-stack
 intro: A real-time auction system using socket.io to push live bids to connected browsers.
 image: ./images/thumbs/realtime-auctions.jpg
 technology:

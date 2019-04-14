@@ -1,6 +1,6 @@
 ---
 title: Property Portal
-role: Front & Back-end Developer
+role: Full-stack
 intro: Application development for a property portal in Qatar. Built with MongoDb and AngularJS.
 image: ./images/thumbs/property-portal.jpg
 technology:

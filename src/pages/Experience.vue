@@ -1,6 +1,6 @@
 <template>
   <Layout>
-		<div class="lg:flex flex-row-reverse leading-normal text-black font-thin">
+		<div class="p-4 lg:flex flex-row-reverse leading-normal text-black font-thin">
 			<div class="lg:w-1/3 max-w-sm mx-auto mb-4 lg:mx-4">
 				<h3 class="font-normal">Current Role</h3>
 				Senior Front End Developer @
@@ -104,7 +104,7 @@
 					</a>
 				</p>
 
-				<div class="flex justify-between">
+				<div class="md:flex justify-between">
 					<div class="px-4">
 						<h3 class="font-thin my-4 text-2xl">Expertise</h3>
 

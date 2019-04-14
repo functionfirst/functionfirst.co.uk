@@ -1,46 +1,56 @@
 <template>
   <Layout>
-    <h1 class="pl-8 leading-loose text-3xl font-thin text-black">
-      {{ $page.portfolioPost.title }}
-      <span class="text-sm">{{ $page.portfolioPost.year }}</span>
-    </h1>
-    
-    <div class="lg:flex flex-row-reverse leading-normal">
-      <div class="flex lg:block lg:w-1/3">
-        <div class="mx-8 flex-1" v-if="$page.portfolioPost.role">
-          <h3 class="text-grey-darkest mb-1 text-sm font-thin mt-4">Role</h3>
-          {{ $page.portfolioPost.role }}
-        </div>
+    <div class="p-4 md:p-0 md:pl-8">
+      <h1 class="leading-loose text-3xl font-thin text-black">
+        {{ $page.portfolioPost.title }}
+        <span class="text-sm">{{ $page.portfolioPost.year }}</span>
+      </h1>
+      
+      <div class="lg:flex flex-row-reverse leading-normal">
+        <div class="lg:w-1/3">
+          <div class="flex md:block md:mx-8 flex-1" v-if="$page.portfolioPost.role">
+            <h3 class="w-24 md:w-auto text-grey-darkest mb-1 text-sm font-thin mt-4">Role</h3>
+            <div class="mt-4 md:m-0">
+              {{ $page.portfolioPost.role }}
+            </div>
+          </div>
 
-        <div class="mx-8 flex-1" v-if="$page.portfolioPost.technology">
-          <h3 class="text-grey-darkest mb-1 text-sm font-thin mt-4">Technology</h3>
+          <div class="flex md:block md:mx-8 flex-1" v-if="$page.portfolioPost.technology">
+            <h3 class="w-24 md:w-auto text-grey-darkest mb-1 text-sm font-thin mt-4">Technology</h3>
 
-          <div v-for="(tech, index) in $page.portfolioPost.technology" :key="index">
-            {{ tech }}
+            <div class="mt-4 md:m-0">
+              <div v-for="(tech, index) in $page.portfolioPost.technology" :key="index">
+              {{ tech }}
+            </div>
+            </div>
+          </div>
+
+          <div class="flex md:block md:mx-8 flex-1" v-if="$page.portfolioPost.integrations">
+            <h3 class="w-24 md:w-auto text-grey-darkest mb-1 text-sm font-thin mt-4">Integrations</h3>
+
+            <div class="mt-4 md:m-0">
+              {{ $page.portfolioPost.integrations }}
+            </div>
+          </div>
+
+          <div class="flex md:block md:mx-8 flex-1" v-if="$page.portfolioPost.github">
+            <h3 class="w-24 md:w-auto text-grey-darkest mb-1 text-sm font-thin mt-4">Github</h3>
+            
+            <div class="mt-4 md:m-0">
+              <a
+                :href="$page.portfolioPost.github"
+                class="lg:flex items-center text-primary-dark no-underline hover:text-primary-light"
+                target="_blank"
+              >
+                <Github width="18" height="18" class="mr-1" />
+                {{ $page.portfolioPost.title }}
+              </a>
+            </div>
           </div>
         </div>
-
-        <div class="mx-8 flex-1" v-if="$page.portfolioPost.integrations">
-          <h3 class="text-grey-darkest mb-1 text-sm font-thin mt-4">Integrations</h3>
-
-          {{ $page.portfolioPost.integrations }}
+        <div class="md:mx-8 lg:w-2/3 leading-normal">
+          <div class="content" v-html="$page.portfolioPost.content"></div>
         </div>
-
-        <div class="mx-8 flex-1" v-if="$page.portfolioPost.github">
-          <h3 class="text-grey-darkest mb-1 text-sm font-thin mt-4">Github</h3>
-          
-          <a
-            :href="$page.portfolioPost.github"
-            class="lg:flex items-center text-primary-dark no-underline hover:text-primary-light"
-            target="_blank"
-          >
-            <Github width="18" height="18" class="mr-1" />
-            {{ $page.portfolioPost.title }}
-          </a>
-        </div>
-      </div>
-      <div class="md:mx-8 lg:w-2/3 leading-normal">
-        <div class="content" v-html="$page.portfolioPost.content"></div>
       </div>
     </div>
   </Layout>

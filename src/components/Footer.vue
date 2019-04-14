@@ -1,5 +1,5 @@
 <template>
-  <footer class="border-t border-grey-lighter pt-8 mt-8 flex flex-col items-center">
+  <footer class="border-t border-grey-lighter py-8 mt-8 flex flex-col items-center">
     <ul class="list-reset flex justify-center">
 
       <li v-for="(icon, index) in social" :key="index" class="mx-1">
