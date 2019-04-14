@@ -1,12 +1,12 @@
-# Default starter for Gridsome
+# functionfirst.co.uk
+Simple portfolio site to showcase some of my previous work, though most of it is a couple of years old now.
 
-### 1. Install Gridsome CLI tool if you don't have
+As a Senior Front-end Developer in the R&D team at [Visualsoft](https://www.visualsoft.co.uk),
+most of my work is now concentrated on improving our platform for all our clients. With a focus on performance, and modern technologies such as AMP and Vue.js.
 
-`npm install --global @gridsome/cli`
+### Stack
 
-### 2. Create a Gridsome project
-
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+* [Gridsome](https://vuejs.org/)
+* [Vue.js](https://vuejs.org)
+* [Netlify](https://netlify.com)
+* [ImprovMX](https://improvmx.com)
