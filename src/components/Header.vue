@@ -7,15 +7,20 @@
 
     <nav class="mt-12">
       <h3 class="mt-4 mb-2 mx-3 text-xs text-grey-darkest uppercase">Portfolio</h3>
-      <g-link
-        :to="node.path" v-for="({ node }) in $static.portfolio.edges"
-        :key="node.id"
-        class="flex justify-between p-3 no-underline block text-primary-dark rounded hover:underline hover:text-primary-light xhover:bg-grey-light"
-        :class="{ 'bg-grey-lighter' : currentRoute === node.path }"
-      >
-        <span>{{ node.title }}</span>
-        <span v-if="currentRoute === node.path">&rarr;</span>
-      </g-link>
+
+      <portfolio-data>
+        <div slot-scope="{ edges }">
+          <g-link
+            :to="node.path" v-for="({ node }) in edges"
+            :key="node.id"
+            class="flex justify-between p-3 no-underline block text-primary-dark rounded hover:underline hover:text-primary-light xhover:bg-grey-light"
+            :class="{ 'bg-grey-lighter' : currentRoute === node.path }"
+          >
+            <span>{{ node.title }}</span>
+            <span v-if="currentRoute === node.path">&rarr;</span>
+          </g-link>
+        </div>
+      </portfolio-data>
     </nav>
 
     <div class="mt-4">
@@ -33,28 +38,13 @@
   </header>
 </template>
 
-<static-query>
-query Portfolio {
-  portfolio: allPortfolioPost(sortBy: "DESC") {
-    edges {
-      node {
-        id
-        title
-        path
-        role
-        image (width: 200)
-        intro
-        technology
-        integrations
-        deployed
-      }
-    }
-  }
-}
-</static-query>
-
 <script>
+import PortfolioData from '~/components/PortfolioData'
+
 export default {
+  components: {
+    PortfolioData
+  },
   computed: {
     currentRoute() {
       return this.$route.path;
