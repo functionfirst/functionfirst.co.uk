@@ -19,12 +19,12 @@
       <h3 class="mt-4 mb-2 mx-3 text-xs text-grey-darkest uppercase">Portfolio</h3>
 
       <portfolio-data>
-        <div slot-scope="{ edges }">
+        <div class="border-t md:border-none" slot-scope="{ edges }">
           <g-link
             :to="node.path" v-for="({ node }) in edges"
             :key="node.id"
             @click.native="$emit('toggle')"
-            class="flex justify-between p-3 no-underline block text-primary-dark rounded hover:underline hover:text-primary-light xhover:bg-grey-light"
+            class="flex border-b md:border-none justify-between p-3 no-underline block text-primary-dark rounded hover:underline hover:text-primary-light xhover:bg-grey-light"
             :class="{ 'bg-grey-lighter' : currentRoute === node.path }"
           >
             <span>{{ node.title }}</span>
