@@ -15,10 +15,10 @@
 
 				<h3 class="font-normal mt-4">Email</h3>
 				<a
-					href="mailto:alan@functionfirst.co.uk"
+					href="mailto:alanjenkins1978+website@gmail.com"
 					class="text-primary-dark no-underline hover:text-primary-light"
 				>
-					alan@functionfirst.co.uk
+					alanjenkins1978@gmail.com
 				</a>
 
 				<h3 class="font-normal mt-4">Technical Skills</h3>
