@@ -13,8 +13,9 @@ technology:
   - CSS/Less
 deployed: Gulp, NPM & GIT
 year: 2017
-github: https://github.com/functionfirst/realtime-auction
 ---
+> **Source code:** [https://github.com/functionfirst/realtime-auction](https://github.com/functionfirst/realtime-auction)
+
 The initial scope of the Gulf Plates project was to design and build a web application that could facilitate the sale of car number plates in real-time.
 
 

@@ -13,8 +13,9 @@ technology:
 integrations: AWS S3 Storage
 deployed: Gulp, NPM & GIT
 year: 2017
-github: https://github.com/functionfirst/property-portal
 ---
+> **Source code:** [https://github.com/functionfirst/property-portal](https://github.com/functionfirst/property-portal)
+
 The brief for this project was to design and develop a fully functional property management website to advertise property for sale or available to rent. Initially the plan was for the portal to be launched in Qatar and from there slowly build interest and expand into other territories as awareness and demand grew.
 
 ## Features
