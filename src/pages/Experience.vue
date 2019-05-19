@@ -91,7 +91,7 @@
 				<p class="my-8 flex justify-center">
 					<a
 						href="https://docs.google.com/document/d/1xtrGsfAjW8s9hdqVEkJMyMfiJOYWCiiVVHyKB5Oxtes/edit?usp=sharing"
-						class="flex items-center rounded shadow-md py-4 px-6 bg-primary hover:bg-primary-dark no-underline text-grey-lighter"
+						class="flex items-center rounded shadow-md py-4 px-6 bg-primary hover:bg-primary-dark hover:text-grey-lightest no-underline text-grey-lighter"
 						rel="noreferrer"
 						target="_blank"
 					>
