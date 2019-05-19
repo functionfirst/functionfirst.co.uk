@@ -54,15 +54,28 @@
 				<div>
 					<h3 class="font-thin my-4 text-2xl">Other Experience</h3>
 
+					<!-- Gridsome Static Site Generator
+Netlify
+GIT
+Photoshop & Sketch for Mac
+Axure Prototyping Tool
+Scrum / Agile
+ASP.NET VB, C#, MVC, Webforms
+Telerik .NET AJAX Controls & Reporting
+MS SQL Server Procedures, Triggers & Views
+Node.js -->
+
+
 					<ul>
-						<li>ASP.NET (VB, C#, MVC)</li>
+						<li>Gridsome <span class="text-sm text-grey-darkest">Static Site Generator</span></li>
+						<li>Netlify</li>
+						<li>GIT <span class="text-sm text-grey-darkest">Version Control</span></li>
+						<li>Photoshop & Sketch <span class="text-sm text-grey-darkest">for Mac</span></li>
 						<li>Axure - Prototyping</li>
-						<li>GIT</li>
-						<li>MongoDb / MongooseJS</li>
-						<li>Scrum / Agile</li>
-						<li>Sketch (for Mac)</li>
-						<li>SQL Server</li>
-						<li>Photoshop</li>
+						<li>Scrum <span class="text-sm text-grey-darkest">/</span> Agile</li>
+						<li>ASP.NET <span class="text-sm text-grey-darkest">VB, C#, MVC, Webforms, Telerik .NET AJAX Controls & Reporting</span></li>
+						<li>MS SQL Server <span class="text-sm text-grey-darkest">Procedures, Triggers & Views</span></li>
+						<li>Node.js</li>
 					</ul>
 				</div>
 			</div>
