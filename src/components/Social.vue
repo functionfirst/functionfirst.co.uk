@@ -1,7 +1,6 @@
 <template>
-  <footer class="border-t border-grey-lighter py-8 mt-8 flex flex-col items-center">
-    <ul class="list-reset flex justify-center">
-
+  <footer class="py-8 mt-8 flex flex-col items-center">
+    <ul class="list-reset flex justify-between">
       <li v-for="(icon, index) in social" :key="index" class="mx-1">
         <a
           :href="icon.link"
@@ -14,17 +13,6 @@
         </a>
       </li>
     </ul>
-
-    <p class="mt-4">
-      <a
-        href="https://github.com/functionfirst/functionfirst.co.uk"
-        class="flex items-center no-underline text-sm text-primary-dark hover:text-primary-light hover:underline"
-        rel="noreferrer"
-        target="_blank"
-      >
-        View source code on <Github class="mx-1" width="18" height="18" /> Github
-      </a>
-    </p>
   </footer>  
 </template>
 

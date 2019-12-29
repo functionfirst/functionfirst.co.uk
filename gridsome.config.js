@@ -19,15 +19,4 @@ module.exports = {
   siteUrl: 'https://functionfirst.co.uk',
   siteDescription: "functionfirst is the online portfolio of Web Designer and Developer, Alan Jenkins. As a professional Web Designer and Developer since 2000 I have worked with a variety of SME's and successful brands.",
   titleTemplate: `%s`,
-
-  plugins: [
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: 'portfolio/*.md',
-        typeName: 'PortfolioPost',
-        route: '/:slug'
-      }
-    }
-  ]
 }
