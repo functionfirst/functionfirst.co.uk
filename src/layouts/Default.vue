@@ -2,7 +2,7 @@
   <div class="flex flex-col max-w-lg mx-auto relative min-h-screen">
     <Header />
 
-    <slot/>
+    <slot />
   </div>
 </template>
 
@@ -15,11 +15,3 @@ export default {
   }
 };
 </script>
-
-<static-query>
-query {
-  metaData {
-    siteName
-  }
-}
-</static-query>
