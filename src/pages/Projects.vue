@@ -1,15 +1,15 @@
 <template>
   <layout>
-    <about />
+    <portfolio />
   </layout>
 </template>
 
 <script>
-import About from "~/components/About";
+import Portfolio from "~/components/Portfolio";
 
 export default {
   components: {
-    About
+    Portfolio
   }
 };
 </script>

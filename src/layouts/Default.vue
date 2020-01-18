@@ -1,11 +1,8 @@
 <template>
-  <div class="flex flex-col max-w-3xl mx-auto relative min-h-screen">
-    <div class="flex flex-1 flex-col md:flex-row">
-      <Header :show="show" @toggle="toggleMenu()" />
-      <div class="flex-1 mt-24">
-        <slot/>
-      </div>
-    </div>
+  <div class="max-w-sm md:max-w-xl mx-auto px-4">
+    <Header />
+
+    <slot />
 
     <Footer />
   </div>
@@ -19,24 +16,6 @@ export default {
   components: {
     Header,
     Footer
-  },
-  data () {
-    return {
-      show: false
-    };
-  },
-  methods: {
-    toggleMenu() {
-      this.show = !this.show;
-    }
   }
 };
 </script>
-
-<static-query>
-query {
-  metaData {
-    siteName
-  }
-}
-</static-query>

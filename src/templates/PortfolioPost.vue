@@ -1,56 +1,67 @@
 <template>
   <Layout>
-    <div class="p-4 md:p-0 md:pl-8">
-      <h1 class="leading-loose text-3xl font-thin text-black">
-        {{ $page.portfolioPost.title }}
-        <span class="text-sm">{{ $page.portfolioPost.year }}</span>
-      </h1>
-      
-      <div class="lg:flex flex-row-reverse leading-normal">
-        <div class="lg:w-1/3">
-          <div class="flex md:block md:mx-8 flex-1" v-if="$page.portfolioPost.role">
-            <h3 class="w-24 md:w-auto text-grey-darkest mb-1 text-sm font-thin mt-4">Role</h3>
-            <div class="mt-4 md:m-0">
-              {{ $page.portfolioPost.role }}
-            </div>
+    <h1 class="leading-none text-3xl font-thin text-black">
+      {{ portfolio.title }}
+      <span class="text-sm">{{ portfolio.year }}</span>
+    </h1>
+
+    <div class="md:flex flex-row-reverse leading-normal">
+      <div class="md:w-64 relative">
+        <div class="md:sticky pin-t pt-4">
+          <div v-if="portfolio.website" class="mb-4 flex justify-center">
+            <g-link
+              :href="portfolio.website"
+              class="inline-flex items-center shadow bg-accent rounded px-3 py-2 text-white w-full hover:bg-accent-dark hover:text-grey-lighter"
+            >
+              <NewWindow width="18" class="mr-2" />View Live Site
+            </g-link>
           </div>
 
-          <div class="flex md:block md:mx-8 flex-1" v-if="$page.portfolioPost.technology">
-            <h3 class="w-24 md:w-auto text-grey-darkest mb-1 text-sm font-thin mt-4">Technology</h3>
-
-            <div class="mt-4 md:m-0">
-              <div v-for="(tech, index) in $page.portfolioPost.technology" :key="index">
-              {{ tech }}
-            </div>
-            </div>
+          <div v-if="portfolio.github" class="mb-4 flex justify-center">
+            <g-link
+              :href="portfolio.github"
+              class="inline-flex items-center shadow bg-primary rounded px-3 py-2 text-white w-full hover:bg-primary-dark hover:text-grey-lighter"
+            >
+              <Github width="24" height="24" class="mr-2" />View the Source Code
+            </g-link>
           </div>
 
-          <div class="flex md:block md:mx-8 flex-1" v-if="$page.portfolioPost.integrations">
-            <h3 class="w-24 md:w-auto text-grey-darkest mb-1 text-sm font-thin mt-4">Integrations</h3>
+          <template v-if="portfolio.role">
+            <h3 class="text-grey-darkest mb-1 text-sm font-thin mt-4">Role</h3>
 
-            <div class="mt-4 md:m-0">
-              {{ $page.portfolioPost.integrations }}
-            </div>
-          </div>
+            <ul class="mt-4 md:m-0">
+              <li>{{ portfolio.role }}</li>
+            </ul>
+          </template>
 
-          <div class="flex md:block md:mx-8 flex-1" v-if="$page.portfolioPost.github">
-            <h3 class="w-24 md:w-auto text-grey-darkest mb-1 text-sm font-thin mt-4">Github</h3>
-            
-            <div class="mt-4 md:m-0">
-              <a
-                :href="$page.portfolioPost.github"
-                class="lg:flex items-center text-primary-dark no-underline hover:text-primary-light"
-                target="_blank"
-              >
-                <Github width="18" height="18" class="mr-1" />
-                {{ $page.portfolioPost.title }}
-              </a>
-            </div>
-          </div>
+          <template v-if="portfolio.technology">
+            <h3 class="text-grey-darkest mb-1 text-sm font-thin mt-4">Technology</h3>
+
+            <ul class="mt-4 md:m-0">
+              <li v-for="(tech, index) in portfolio.technology" :key="index">{{ tech }}</li>
+            </ul>
+          </template>
+
+          <template v-if="portfolio.deployed">
+            <h3 class="text-grey-darkest mb-1 text-sm font-thin mt-4">Deployed</h3>
+
+            <ul class="mt-4 md:m-0">
+              <li>{{ portfolio.deployed }}</li>
+            </ul>
+          </template>
+
+          <template v-if="portfolio.integrations">
+            <h3 class="text-grey-darkest mb-1 text-sm font-thin mt-4">Integrations</h3>
+
+            <ul class="mt-4 md:m-0">
+              <li>{{ portfolio.integrations }}</li>
+            </ul>
+          </template>
         </div>
-        <div class="md:mx-8 lg:w-2/3 leading-normal">
-          <div class="content" v-html="$page.portfolioPost.content"></div>
-        </div>
+      </div>
+
+      <div class="md:mr-8 flex-1 leading-loose">
+        <div class="content" v-html="portfolio.content"></div>
       </div>
     </div>
   </Layout>
@@ -62,27 +73,39 @@ query portfolio ($path: String!) {
     title
     content
     year
+    deployed
     github
     technology
     role
+    website
     integrations
   }
 }
 </page-query>
 
 <script>
-import Github from '~/components/icons/Github'
+import Github from "~/components/icons/Github";
+
+import NewWindow from "~/components/icons/NewWindow";
 
 export default {
   components: {
-    Github
+    Github,
+    NewWindow
   },
-  metaInfo () {
-    return {
-      title: `${this.$page.portfolioPost.title} - functionfirst`
+
+  computed: {
+    portfolio() {
+      return this.$page.portfolioPost;
     }
+  },
+
+  metaInfo() {
+    return {
+      title: `${this.portfolio.title} - functionfirst`
+    };
   }
-}
+};
 </script>
 
 <style lang="sass">
@@ -90,10 +113,11 @@ export default {
   > p:first-child
       font-size: 1.4rem
       font-weight: 300
+      line-height: 1.4
 
   p
-    margin-top: 1rem
-    margin-bottom: 1rem
+    margin-top: 2rem
+    margin-bottom: 2rem
 
   h2, h3
     font-weight: 400
