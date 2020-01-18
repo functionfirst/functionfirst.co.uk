@@ -20,12 +20,12 @@ export default {
 
 <static-query>
 query Portfolio {
-  allPortfolioPost(sortBy: "year", order: DESC) {
+  allPortfolioPost(sort: [{ by: "year", order: DESC }, { by: "title", order: ASC }]) {
     edges {
       node {
         path
         title
-        image (width: 300)
+        image (width: 320)
         intro
         year
         technology
