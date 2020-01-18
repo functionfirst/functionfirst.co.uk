@@ -1,5 +1,6 @@
 ---
 title: Ken Wilson
+slug: ken-wilson
 role: Front-end Developer
 intro: A promotional website for folk singer and artist, Ken Wilson. Built with the Gridsome static-site generator.
 image: ./images/thumbs/ken-wilson.jpg

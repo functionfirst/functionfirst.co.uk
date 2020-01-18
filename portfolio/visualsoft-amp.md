@@ -1,5 +1,6 @@
 ---
 title: Visualsoft AMP Platform
+slug: visualsoft-amp
 role: Front-end Developer
 intro: A deep-dive into the AMP web component framework to build a new front-end for Visualsoft's ecommerce platform.
 image: ./images/thumbs/gabor.jpg

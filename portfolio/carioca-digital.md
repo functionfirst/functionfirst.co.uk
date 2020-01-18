@@ -1,5 +1,6 @@
 ---
 title: Carioca Digital
+slug: carioca-digital
 role: Designer
 intro: Logo design for a start-up technology company based in Rio de Janeiro.
 image: ./images/thumbs/carioca-digital.jpg

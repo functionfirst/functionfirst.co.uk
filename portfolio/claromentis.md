@@ -1,5 +1,6 @@
 ---
 title: Claromentis
+slug: claromentis
 role: Product Manager & UI Designer
 intro: Product design and front-end development for an enterprise level intranet solution.
 image: ./images/thumbs/timesheets.jpg

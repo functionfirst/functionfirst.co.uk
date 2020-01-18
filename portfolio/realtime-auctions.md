@@ -1,5 +1,6 @@
 ---
 title: Real-time Auctions
+slug: real-time-auctions
 role: Full-stack
 intro: A real-time auction system using socket.io to push live bids to connected browsers.
 image: ./images/thumbs/realtime-auctions.jpg

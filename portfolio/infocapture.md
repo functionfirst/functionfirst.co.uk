@@ -1,5 +1,6 @@
 ---
 title: Infocapture
+slug: infocapture
 role: UI Designer
 intro: Early stage concept and exploration into dynamic form building using drag and drop.
 image: ./images/thumbs/infocapture.jpg

@@ -1,5 +1,6 @@
 ---
 title: Visualsoft Roadmap
+slug: visualsoft-roadmap
 role: Front-end Developer
 intro: Visualsoft's public facing Roadmap built using a static-site generator and Netlify.
 image: ./images/thumbs/roadmap.jpg

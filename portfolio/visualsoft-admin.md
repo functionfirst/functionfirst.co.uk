@@ -1,5 +1,6 @@
 ---
 title: Visualsoft Admin
+slug: visualsoft-admin
 role: Front-end Developer
 intro: Visualsoft's new admin system built as a SPA (Single Page App)
 image: ./images/thumbs/visualsoft.svg

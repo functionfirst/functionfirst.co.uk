@@ -1,5 +1,6 @@
 ---
 title: Buildmate
+slug: buildmate
 role: Full-stack
 intro: A .net web application that allowed builders to create quotes and manage their projects.
 image: ./images/thumbs/buildmate.jpg

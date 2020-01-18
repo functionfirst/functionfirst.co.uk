@@ -1,5 +1,6 @@
 ---
 title: Buildmate - website
+slug: buildmate-website
 role: Full-stack
 intro: Website for Buildmate including a custom Blog and Knowledge Base system.
 image: ./images/thumbs/buildmate-web.jpg

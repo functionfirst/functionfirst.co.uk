@@ -1,5 +1,6 @@
 ---
 title: Buildmate - mobile
+slug: buildmate-mobile
 role: Designer
 intro: Conceptual interface design for Buildmate dashboard on mobile devices.
 image: ./images/thumbs/buildmate-mobile.jpg
