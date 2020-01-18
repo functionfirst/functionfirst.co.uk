@@ -4,11 +4,12 @@ role: UI Designer
 intro: Early stage concept and exploration into dynamic form building using drag and drop.
 image: ./images/thumbs/infocapture.jpg
 technology:
-  - HTML5
+  - HTML
   - CSS
   - jQuery
 year: 2012
 ---
+
 This work involved exploring and prototyping a new method of creating custom data forms for Infocapture, one of the most popular modules of the Claromentis intranet platform.
 
 For me this was an extremely interesting project to undertake. Going into this project, myself and the rest of the team assumed that having the ability to drag and drop fields to create a form would provide a much improved user experience. Developing a hi-fidelity prototype to test this theory, the conclusions weren't as expected.

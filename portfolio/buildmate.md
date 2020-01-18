@@ -1,28 +1,30 @@
 ---
-title: Buildmate / website
+title: Buildmate - website
 role: Full-stack
 intro: Website for Buildmate including a custom Blog and Knowledge Base system.
 image: ./images/thumbs/buildmate-web.jpg
 technology:
-  - ASP.NET (MVC)
+  - .NET
+  - MVC
   - C#
-  - SQL Server
+  - MS SQL
   - Photoshop
-  - HTML5
-  - CSS/Less
+  - HTML
+  - CSS
+  - Less
 year: 2017
+github: https://github.com/functionfirst/buildmate-website
 ---
-> **Source code:** [https://github.com/functionfirst/buildmate-website](https://github.com/functionfirst/buildmate-website)
 
-A marketing focused website designed to promote the Buildmate web application which supported builders and tradesmen by simplifying the creation and management of their projects and customer base.
+A marketing website to promote [Buildmate](/buildmate), a web application allowing builders and tradesmen to create building quotes for their customers. The application also included some facility for managing customer data and project reporting.
 
 ## Features
 
-* Static content
-* Simple contact form
-* Blogs
-* Knowledge Base
-* Admin management for Blogs & Knowledege Base articles
+- Static content
+- Simple contact form
+- Blogs
+- Knowledge Base
+- A CMS system to manage Blog & Knowledge Base content
 
 [![Screenshot of the Get Buildmate website](./images/getbuildmate.jpg)](./images/getbuildmate.jpg)
 
