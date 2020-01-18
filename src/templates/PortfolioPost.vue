@@ -121,4 +121,7 @@ export default {
 
   h2, h3
     font-weight: 400
+
+    + p
+      margin-top: 0
 </style>
