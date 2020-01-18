@@ -2,7 +2,7 @@
 title: Carioca Digital
 slug: carioca-digital
 role: Designer
-intro: Logo design for a start-up technology company based in Rio de Janeiro.
+intro: Logo design for Carioca Digital, a start-up technology company based in Rio de Janeiro, Brazil.
 image: ./images/thumbs/carioca-digital.jpg
 technology:
   - Photoshop
