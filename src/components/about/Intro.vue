@@ -8,7 +8,7 @@
     />
 
     <div>
-      <p class="leading-none text-grey-light">Hello, my name is</p>
+      <p class="leading-none">Hello, my name is</p>
       <h1 class="font-medium text-4xl">Alan Jenkins</h1>
 
       <p class="leading-normal text-2xl font-light">
