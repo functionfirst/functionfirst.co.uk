@@ -2,7 +2,7 @@
   <ul class="list-reset flex justify-center">
     <li v-for="(icon, index) in social" :key="index" class="mx-1">
       <g-link
-        :href="icon.link"
+        :to="icon.link"
         :aria-label="icon.name"
         class="mx-2 block p-1 text-primary-dark hover:text-primary-light"
       >

@@ -26,16 +26,16 @@
           <span class="font-bold">Senior Front-end Developer</span> in the Optimisation team for the folks at
           <g-link
             class="text-grey-lightest hover:text-grey-lighter underline"
-            href="https://www.visualsoft.co.uk"
+            to="https://www.visualsoft.co.uk"
           >Visualsoft Ltd</g-link>.
           Previously, Associate Software Engineer at
           <g-link
             class="text-grey-lightest hover:text-grey-lighter underline"
-            href="https://sage.com/en-gb/"
+            to="https://sage.com/en-gb/"
           >Sage Group Plc</g-link>&nbsp;and Product Manager for the folks at
           <g-link
             class="text-grey-lightest hover:text-grey-lighter underline"
-            href="https://www.claromentis.com/"
+            to="https://www.claromentis.com/"
           >Claromentis</g-link>.
         </p>
       </div>

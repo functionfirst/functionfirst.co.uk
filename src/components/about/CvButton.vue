@@ -1,6 +1,6 @@
 <template>
   <g-link
-    href="https://docs.google.com/document/d/1xtrGsfAjW8s9hdqVEkJMyMfiJOYWCiiVVHyKB5Oxtes/edit?usp=sharing"
+    to="https://docs.google.com/document/d/1xtrGsfAjW8s9hdqVEkJMyMfiJOYWCiiVVHyKB5Oxtes/edit?usp=sharing"
     class="flex md:w-1/3 items-center rounded shadow-md p-6 bg-primary hover:bg-primary-dark hover:text-grey-lightest text-grey-lighter md:mx-2"
   >
     <GoogleDrive width="32" class="mr-6" />

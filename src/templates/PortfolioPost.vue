@@ -10,7 +10,7 @@
         <div class="md:sticky pin-t pt-4">
           <div v-if="portfolio.website" class="mb-4 flex justify-center">
             <g-link
-              :href="portfolio.website"
+              :to="portfolio.website"
               class="inline-flex items-center shadow bg-accent rounded px-3 py-2 text-white w-full hover:bg-accent-dark hover:text-grey-lighter"
             >
               <NewWindow width="18" class="mr-2" />View Live Site
@@ -19,7 +19,7 @@
 
           <div v-if="portfolio.github" class="mb-4 flex justify-center">
             <g-link
-              :href="portfolio.github"
+              :to="portfolio.github"
               class="inline-flex items-center shadow bg-primary rounded px-3 py-2 text-white w-full hover:bg-primary-dark hover:text-grey-lighter"
             >
               <Github width="24" height="24" class="mr-2" />View the Source Code
