@@ -56,9 +56,9 @@ let colors = {
   'grey-lighter': '#eaeaea',
   'grey-lightest': '#f8f8f8',
 
-  'accent-light': '#44D1AF',
-  'accent': '#2FCCA6',
-  'accent-dark': '#2AB795',
+  'accent-light': '#c12e5a',
+  'accent': '#ba1748',
+  'accent-dark': '#a51440',
 
   'primary-light': '#1780C6',
   'primary': '#1779BA',
