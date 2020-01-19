@@ -3,6 +3,7 @@
     <g-image
       src="~/assets/images/profile.jpg"
       width="140"
+      alt="Profile image"
       class="md:mr-12 rounded shadow hidden md:block"
     />
 
