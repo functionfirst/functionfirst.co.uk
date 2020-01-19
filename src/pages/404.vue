@@ -18,7 +18,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Sorry, this page isn't here - Alan Jenkins"
+    title: "Sorry, this page isn't here  - web design and development portfolio"
   }
 };
 </script>
