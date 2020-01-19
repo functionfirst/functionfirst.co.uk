@@ -29,7 +29,7 @@ const navigation = [
   },
   {
     title: "Projects",
-    route: "/projects"
+    route: "/projects/"
   }
 ];
 
