@@ -2,11 +2,11 @@
   <div class="leading-loose text-black">
     <about-intro />
 
-    <p class="my-6 md:flex justify-center">
+    <div class="my-6 md:flex justify-center">
       <cv-button />
 
       <pluralsight-button />
-    </p>
+    </div>
 
     <about-info />
   </div>
