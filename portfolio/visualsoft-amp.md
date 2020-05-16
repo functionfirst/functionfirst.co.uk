@@ -12,7 +12,7 @@ technology:
   - Liquid
   - Tailwind
 year: 2020
-website: https://gaborshoes.dev.visualsoft.co.uk/
+website: https://www.gaborshoes.co.uk/
 ---
 
 Building on top of Visualsoft's existing PHP platform, this project involved a major overhaul of the front-end.
