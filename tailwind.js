@@ -60,9 +60,9 @@ let colors = {
   'accent': '#ba1748',
   'accent-dark': '#a51440',
 
-  'primary-light': '#1780C6',
-  'primary': '#1779BA',
-  'primary-dark': '#1470AD',
+  'primary-light': '#3B81B8',
+  'primary': '#2673B1',
+  'primary-dark': '#22689F',
 }
 
 module.exports = {
