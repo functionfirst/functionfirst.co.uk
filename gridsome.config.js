@@ -28,6 +28,29 @@ module.exports = {
         typeName: 'PortfolioPost',
         route: '/:slug'
       }
+    },
+    {
+      use: 'gridsome-plugin-service-worker',
+      options: {
+        networkFirst: {
+          precachedRoutes: ['/'],
+          cacheOnly: {
+            cacheName: process.env.COMMIT_REF ? process.env.COMMIT_REF : 'v1',
+            routes: ['/']
+          }
+        }
+      }
+    },
+    {
+      use: 'gridsome-plugin-pwa',
+      options: {
+        title: 'functionfirst',
+        shortName: 'functionfirst',
+        themeColor: '#ffffff',
+        backgroundColor: '#2673B1',
+        icon: 'src/favicon.png',
+        msTileColor: '#2673B1'
+      }
     }
   ]
 }
