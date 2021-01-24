@@ -12,8 +12,7 @@
       <h1 class="font-medium text-4xl">Alan Jenkins</h1>
 
       <p class="leading-normal text-2xl font-light">
-        I'm a hard-working and motivated designer, developer and manager with over
-        15 years of experience in all aspects of a web project.
+        A hard-working and motivated designer, developer and manager with experience in all aspects of the web project life-cycle.
       </p>
 
       <div class="md:block" :class="show ? 'block' : 'hidden'">
@@ -23,26 +22,41 @@
         </p>
 
         <p>
-          Currently a
-          <span class="font-bold">Senior Front-end Developer</span> in the Optimisation team for the folks at
+          Currently a <span class="font-bold">Senior Front-end Developer</span>
+          in the Optimisation team for the folks at
           <g-link
             class="text-grey-lightest hover:text-grey-lighter underline"
             to="https://www.visualsoft.co.uk"
-          >Visualsoft Ltd</g-link>.
+          >
+            Visualsoft Ltd
+          </g-link>.
           Previously, Associate Software Engineer at
           <g-link
             class="text-grey-lightest hover:text-grey-lighter underline"
             to="https://sage.com/en-gb/"
-          >Sage Group Plc</g-link>&nbsp;and Product Manager for the folks at
+          >
+            Sage Group Plc
+          </g-link>
+          and Product Manager for the folks at
           <g-link
             class="text-grey-lightest hover:text-grey-lighter underline"
             to="https://www.claromentis.com/"
-          >Claromentis</g-link>.
+          >
+            Claromentis
+          </g-link>.
         </p>
       </div>
 
-      <div class="flex items-center justify-center mt-4 md:hidden" v-show="!show">
-        <button @click="show = !show" class="bg-white text-primary rounded px-3 py-2">Read more...</button>
+      <div
+        class="flex items-center justify-center mt-4 md:hidden"
+        v-show="!show"
+      >
+        <button
+          @click="show = !show"
+          class="bg-white text-primary rounded px-3 py-2"
+        >
+          Read more...
+        </button>
       </div>
     </div>
   </header>
