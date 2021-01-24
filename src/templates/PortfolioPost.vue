@@ -120,7 +120,7 @@ export default {
     margin-bottom: 2rem
 
   h2, h3
-    font-weight: 400
+    font-weight: 600
 
     + p
       margin-top: 0
