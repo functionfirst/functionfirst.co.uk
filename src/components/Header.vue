@@ -1,8 +1,8 @@
 <template>
-  <header class="flex justify-between items-center mt-6 mb-12">
+  <header class="flex flex-col-reverse md:flex-row justify-between items-center my-6">
     <navigation />
 
-    <social />
+    <social class="mb-6 md:mb-0" />
   </header>
 </template>
 
