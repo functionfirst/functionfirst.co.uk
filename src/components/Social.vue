@@ -1,12 +1,16 @@
 <template>
-  <ul class="list-reset flex justify-center">
-    <li v-for="(icon, index) in social" :key="index" class="mx-1">
+  <ul class="list-reset flex justify-center md:justify-start">
+    <li v-for="(icon, index) in social" :key="index" class="mr-2">
       <g-link
         :to="icon.link"
         :aria-label="icon.name"
-        class="mx-2 block p-1 text-primary-dark hover:text-primary-light"
+        class="hover:bg-grey-lighter rounded p-2 w-12 h-12 flex items-center justify-center text-primary-dark hover:text-primary-light"
       >
-        <component :is="icon.name" height="24" />
+        <component
+          :is="icon.name"
+          height="24"
+          width="24"
+        />
       </g-link>
     </li>
   </ul>

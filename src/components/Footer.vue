@@ -1,5 +1,5 @@
 <template>
-  <footer class="border-t border-grey-lighter py-8 mt-8 flex flex-col items-center">
+  <footer class="py-8 mt-8 flex flex-col items-center">
     <p class="text-sm">
       <g-link
         to="https://github.com/functionfirst/functionfirst.co.uk"

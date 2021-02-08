@@ -1,5 +1,5 @@
 <template>
-  <div class="md:flex justify-between">
+  <div class="md:flex justify-between leading-loose">
     <div class="flex-1 md:px-4" v-for="(item, key) in about" :key="key">
       <h3 class="font-thin mb-4 text-2xl">{{ item.title }}</h3>
 

@@ -1,6 +1,6 @@
 <template>
   <layout>
-    <portfolio />
+    <portfolio class="md:max-w-xl mx-auto mt-16 px-4" />
   </layout>
 </template>
 

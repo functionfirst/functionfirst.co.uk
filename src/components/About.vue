@@ -1,14 +1,16 @@
 <template>
-  <div class="leading-loose text-black">
+  <div class="text-black">
     <about-intro />
 
-    <div class="my-6 md:flex justify-center">
+    <div class="my-12 md:flex justify-center md:max-w-xl mx-auto px-4">
       <cv-button />
 
       <pluralsight-button />
     </div>
 
-    <about-info />
+    <div class="max-w-sm md:max-w-xl mx-auto px-4">
+      <about-info />
+    </div>
   </div>
 </template>
 

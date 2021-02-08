@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-sm md:max-w-xl mx-auto px-4">
+  <div>
     <Header />
 
     <slot />

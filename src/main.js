@@ -6,5 +6,5 @@ export default function (Vue, { head }) {
 
   Vue.prototype.$head = head;
 
-  head.bodyAttrs = { class: 'bg-grey-lightest font-sans' }
+  head.bodyAttrs = { class: 'font-sans' }
 }

@@ -1,73 +1,37 @@
 <template>
-  <header class="mb-6 md:flex shadow p-6 md:p-12 items-start rounded bg-primary text-white">
-    <g-image
-      src="~/assets/images/profile.jpg"
-      width="140"
-      alt="Profile image"
-      class="md:mr-12 rounded shadow hidden md:block"
-    />
+  <section class="md:border-b">
+    <div class="relative max-w-sm md:max-w-xl mx-auto ">
+      <header class="md:absolute inset-0 md:max-w-xs z-10 pt-24 md:py-32 px-4">
+        <p class="leading-none mb-2 text-xl">Hello, my name is</p>
 
-    <div>
-      <p class="leading-none">Hello, my name is</p>
-      <h1 class="font-medium text-4xl">Alan Jenkins</h1>
+        <h1 class="font-medium mb-8 text-4xl">Alan Jenkins</h1>
 
-      <p class="leading-normal text-2xl font-light">
-        A hard-working and motivated designer, developer and manager with experience in all aspects of the web project life-cycle.
-      </p>
-
-      <div class="md:block" :class="show ? 'block' : 'hidden'">
-        <p class="my-4">
-          Passionate about building great web applications and products with a strong foundation in
-          UI design and UX, I strive for simple processes and efficiency wherever possible.
+        <p class="leading-normal my-4 text-lg font-light">
+          I'm a Senior Front End Developer currently working for the folks at <g-link href="https://www.visualsoft.co.uk/">Visualsoft Ltd</g-link>.
         </p>
 
-        <p>
-          Currently a <span class="font-bold">Senior Front-end Developer</span>
-          in the Optimisation team for the folks at
-          <g-link
-            class="text-grey-lightest hover:text-grey-lighter underline"
-            to="https://www.visualsoft.co.uk"
-          >
-            Visualsoft Ltd
-          </g-link>.
-          Previously, Associate Software Engineer at
-          <g-link
-            class="text-grey-lightest hover:text-grey-lighter underline"
-            to="https://sage.com/en-gb/"
-          >
-            Sage Group Plc
-          </g-link>
-          and Product Manager for the folks at
-          <g-link
-            class="text-grey-lightest hover:text-grey-lighter underline"
-            to="https://www.claromentis.com/"
-          >
-            Claromentis
-          </g-link>.
+        <p class="leading-normal text-lg font-medium">
+          Passionate about building great web applications and putting the user first. 
         </p>
-      </div>
 
-      <div
-        class="flex items-center justify-center mt-4 md:hidden"
-        v-show="!show"
-      >
-        <button
-          @click="show = !show"
-          class="bg-white text-primary rounded px-3 py-2"
-        >
-          Read more...
-        </button>
-      </div>
+        <social class="mt-4" />
+      </header>
+
+      <g-image
+        src="~/assets/images/profile.jpg"
+        width="1024"
+        class="hidden md:block"
+      />
     </div>
-  </header>
+  </section>
 </template>
 
 <script>
+import social from "~/components/Social";
+
 export default {
-  data() {
-    return {
-      show: false
-    };
+  components: {
+    social
   }
 };
 </script>
