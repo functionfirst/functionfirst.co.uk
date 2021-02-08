@@ -6,7 +6,7 @@
     <GoogleDrive width="32" class="mr-6" />
 
     <div class="leading-none">
-      <h3 class="text-lg font-medium">View Curriculum Vitae</h3>
+      <h2 class="text-lg font-medium">View Curriculum Vitae</h2>
       <p class="text-xs mt-2">Google Doc</p>
     </div>
   </g-link>

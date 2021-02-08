@@ -6,7 +6,7 @@
     <PluralSight width="42" class="mr-4" />
 
     <div class="leading-none">
-      <h3 class="text-lg font-medium">Pluralsight</h3>
+      <h2 class="text-lg font-medium">Pluralsight</h2>
       <p class="text-xs mt-2">Review Skill Assessments</p>
     </div>
   </g-link>
