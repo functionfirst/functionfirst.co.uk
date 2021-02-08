@@ -2,10 +2,10 @@
   <div class="text-black">
     <about-intro />
 
-    <div class="my-12 md:flex justify-center md:max-w-xl mx-auto px-4">
-      <cv-button />
+    <div class="my-12 sm:flex items-center justify-center md:max-w-xl mx-auto px-4">
+      <cv-button class="sm:mr-2" />
 
-      <pluralsight-button />
+      <pluralsight-button class="sm:ml-2 mt-4 sm:mt-0" />
     </div>
 
     <div class="max-w-sm md:max-w-xl mx-auto px-4">
