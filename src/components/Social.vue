@@ -16,15 +16,13 @@
 import Github from "~/components/icons/Github";
 import Linkedin from "~/components/icons/Linkedin";
 import StackOverflow from "~/components/icons/StackOverflow";
-import Twitter from "~/components/icons/Twitter";
 import { social } from "~/data/";
 
 export default {
   components: {
     Github,
     Linkedin,
-    StackOverflow,
-    Twitter
+    StackOverflow
   },
 
   data() {

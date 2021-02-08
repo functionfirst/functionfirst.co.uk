@@ -45,10 +45,6 @@ const social = [
   {
     name: "Linkedin",
     link: "https://www.linkedin.com/in/aljenks/"
-  },
-  {
-    name: "Twitter",
-    link: "http://twitter.com/aljenks"
   }
 ];
 
