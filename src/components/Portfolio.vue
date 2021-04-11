@@ -1,6 +1,6 @@
 <template>
   <portfolio-data>
-    <div slot-scope="{ edges }" class>
+    <div slot-scope="{ edges }">
       <div class="md:flex relative" v-for="{ node } in edges" :key="node.id">
         <g-link :to="node.path" class="block md:w-1/3 md:pb-20">
           <g-image
