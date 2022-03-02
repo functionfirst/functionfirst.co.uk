@@ -12,22 +12,20 @@
             <div v-if="portfolio.website" class="mb-4 flex justify-center">
               <g-link
                 :to="portfolio.website"
-                class="border border-primary flex items-center justify-between w-full rounded-full px-6 py-3 hover:bg-primary hover:text-white"
+                class="flex items-center justify-between w-full rounded-full px-6 py-3 bg-primary text-white hover:text-white hover:bg-primary-dark"
               >
                 View Live Site
-                <NewWindow
-                  width="16"
-                  class="ml-2"
-                />
+                <NewWindow width="18" />
               </g-link>
             </div>
 
             <div v-if="portfolio.github" class="mb-4 flex justify-center">
               <g-link
                 :to="portfolio.github"
-                class="inline-flex items-center shadow bg-primary rounded px-3 py-2 text-white w-full hover:bg-primary-dark hover:text-grey-lighter"
+                class="flex items-center justify-between w-full rounded-full px-6 py-3 border border-primary hover:border-primary-dark hover:text-primary-dark"
               >
-                <Github width="24" height="24" class="mr-2" />View the Source Code
+                View Source Code
+                <Github width="22" />
               </g-link>
             </div>
 
