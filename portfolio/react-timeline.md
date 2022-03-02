@@ -12,6 +12,7 @@ technology:
   - Tailwind
 year: 2022
 website: https://prima-timeline.netlify.app/
+github: https://github.com/functionfirst/react-timeline
 ---
 Small assignment for a technical interview. Required development of a simple react app that displayed a vertical event timeline.
 
