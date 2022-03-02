@@ -12,9 +12,13 @@
             <div v-if="portfolio.website" class="mb-4 flex justify-center">
               <g-link
                 :to="portfolio.website"
-                class="inline-flex items-center shadow bg-accent rounded px-3 py-2 text-white w-full hover:bg-accent-dark hover:text-grey-lighter"
+                class="border border-primary flex items-center justify-between w-full rounded-full px-6 py-3 hover:bg-primary hover:text-white"
               >
-                <NewWindow width="18" class="mr-2" />View Live Site
+                View Live Site
+                <NewWindow
+                  width="16"
+                  class="ml-2"
+                />
               </g-link>
             </div>
 
